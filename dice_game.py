@@ -5,7 +5,6 @@ def roll():
     roll = random.randint(min_value, max_value)
     return roll
 
-players = 0
 while True:
     players = input("enter number of players (2-4): ")
     if players.isdigit():
@@ -19,7 +18,9 @@ while True:
         
 max_score = 50
 current_score = 0
+players = 3
 player_scores = [0 for player_idx in range(players)]
+
 
 # while max(player_scores) < max_score:
 while  player_scores < max_score:
