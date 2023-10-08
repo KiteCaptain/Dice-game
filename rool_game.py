@@ -1,37 +1,24 @@
 import random
-
 def roll():
-
-    min_value = 1
-
+    min_value = 1 
     max_value = 6
-
     roll = random.randint(min_value, max_value)
-
     return roll
-
 while True:
-
+    max_score = int(input("enter the max score: "))
     players = input("enter the number of players(2-4): ")
-
-
     if players.isdigit():
-
         players = int(players)
-
         if 2 <= players <= 4:
-
             break
         else:
-
             print(" players must be between 2 and 4")
 
-    else:
 
         print(" invalid choice, try again!")
 
 
-max_score = 50
+
 
 player_scores = [0 for player_idx in range(players)]
 
